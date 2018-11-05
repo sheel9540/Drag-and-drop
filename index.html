@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drag and drop</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/drag.js"></script>
+
+</head>
+<body>
+
+
+
+<div class="container center" style="margin-top:100px">
+    <div class="row">
+        <div class="col s4" style="border: 2px solid" >
+            <table class="highlight box drpTar" ondrop="drop(event)" ondragover="allowDrop(event)" id="tab1" style="width:100%">
+                <tr>
+                    <th class="center">List 1</th>
+                </tr>
+                <tr class="task" ondragstart="drag(event)" draggable="true" id="r1">
+                    <td>
+                        Item 1
+                    </td>
+                    
+                </tr>
+                <tr class="task" ondragstart="drag(event)" draggable="true" id="r2">
+                    <td>
+                        Item 2
+                    </td>
+                </tr>
+                <tr class="task" ondragstart="drag(event)" draggable="true" id="r3">
+                    <td>
+                        Item 3
+                    </td>
+                </tr>
+                <tr class="task" ondragstart="drag(event)" draggable="true" id="r4">
+                    <td>
+                        Item 4
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col s4">
+            <label>Drag items from list 1 to list 2 or vice versa</label>
+            <br>
+            <label>Drop item on the list names</label>
+        </div>
+        <div class="col s4" style="border: 2px solid" >
+            <table class="highlight box drpTar" ondrop="drop(event)" ondragover="allowDrop(event)" id="tab2" style="width:100%">
+                <tr>
+                    <th class="center">List 2</th>
+                </tr>
+                <tr class="task" ondragstart="drag(event)" draggable="true" id="r5">
+                    <td>
+                        Item 5
+                    </td>
+                </tr>
+                <tr class="task" ondragstart="drag(event)" draggable="true" id="r6">
+                    <td>
+                        Item 6
+                    </td>
+                </tr>
+                <tr class="task" ondragstart="drag(event)" draggable="true" id="r7">
+                    <td>
+                        Item 7
+                    </td>
+                </tr>
+                <tr class="task" ondragstart="drag(event)" draggable="true" id="r8">
+                    <td>
+                        Item 8
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>    
+
+
+
+
+</body>
+</html>
